@@ -11,9 +11,8 @@ from flask_login import login_required
 from sqlalchemy import and_, or_, desc
 
 from structure import db
-from structure.core.forms import FilterForm, FarmerForm
-from structure.models import User, About, Farmer, EcomRequest
-from structure.core.notifications import notify_slack
+from structure.core.forms import FilterForm, FarmerForm ,ResultForm,CheckResultForm,StudentForm
+from structure.models import User, About, Farmer, EcomRequest , StudentResult , Subject
 
 core = Blueprint('core', __name__)
 
@@ -40,6 +39,16 @@ def base():
     return render_template('base.html', about=about)
 
 
+@core.route('/indexd')
+def indexd():
+    '''
+    Example view of any other "core" page. Such as a info page, about page,
+    contact page. Any page that doesn't really sync with one of the models.
+    '''
+    about = About.query.all()
+    return render_template('index.html', about=about)
+
+
 @core.route('/agent/dashboard')
 @login_required
 def agent_dashboard():
@@ -48,6 +57,8 @@ def agent_dashboard():
     name = "ecom"
     session.pop('msg', None)
 
+    subjects = Subject.query.order_by(desc(Subject.id)).all()
+    studentresults = StudentResult.query.order_by(desc(StudentResult.id)).all()
     farmers = Farmer.query.order_by(desc(Farmer.id)).all()
     ecom_requests = EcomRequest.query.order_by(desc(EcomRequest.id)).all()
 
@@ -58,7 +69,8 @@ def agent_dashboard():
     return render_template(
         'agentportal/dashboard.html',
         form=form, user=user, about=about,
-        name=name, farmers=farmers, ecomrequests=ecom_requests
+        name=name, farmers=farmers, ecomrequests=ecom_requests,
+        subjects=subjects,studentresults=studentresults
     )
 
 
@@ -185,6 +197,143 @@ def addfarmer():
             return redirect(url_for("core.farmers"))
 
     return render_template("agentportal/addfarmer.html", form=form, items=items)
+
+
+
+@core.route("/addresult", methods=["GET", "POST"])
+@login_required
+def addresult():
+    
+    form = ResultForm()
+    items = StudentResult.query.all()
+    subjects = Subject.query.all()
+    if request.method == "POST":
+        print("ssmna")
+        print(form.subject.data)
+       
+        result = StudentResult(
+            name=form.name.data,
+            subject=form.subject.data,
+            result=form.result.data,
+            index_number = form.index_number.data,
+            completed_year = form.year.data
+            
+        )
+        db.session.add(result)
+        db.session.commit()
+        return redirect(url_for("core.results"))
+
+    return render_template("agentportal/addresult.html", form=form, items=items , subjects = subjects)
+
+
+
+
+
+@core.route("/addstudent", methods=["GET", "POST"])
+@login_required
+def addstudent():
+    
+    form = ResultForm()
+    items = StudentResult.query.all()
+    subjects = Subject.query.all()
+    if request.method == "POST":
+        print("ssmna")
+        print(form.subject.data)
+       
+        result = StudentResult(
+            name=form.name.data,
+            subject=form.subject.data,
+            result=form.result.data,
+            index_number = form.index_number.data,
+            completed_year = form.year.data
+            
+        )
+        db.session.add(result)
+        db.session.commit()
+        return redirect(url_for("core.results"))
+
+    return render_template("agentportal/addresult.html", form=form, items=items , subjects = subjects)
+
+
+
+@core.route("/results", methods=["GET", "POST"])
+@login_required
+def results():
+    form = FilterForm()
+    page = request.args.get('page', 1, type=int)
+    results = StudentResult.query.paginate(page, 20, False)
+
+    session.pop('msg', None)
+    session.pop('duplicates', None)
+
+    search = "no"
+    if request.method == "POST":
+        search = "yes"
+        # Get the filter values from the form
+        name = form.name.data
+        subject = form.subject.data
+        result = form.result.data
+        #
+        # Build the SQLAlchemy filter conditions
+        conditions = []
+        if name:
+            name_conditions = [
+                StudentResult.name.like(f"%{name}%"),
+                StudentResult.name.like(f"{name}%"),
+                StudentResult.name.like(f"%{name}"),
+            ]
+            # Use the OR operator to combine the conditions into a single
+            # condition that matches any of the location variations
+            conditions.append(or_(*name_conditions))
+        if subject:
+            subject_conditions = [
+                StudentResult.subject.like(f"%{subject}%"),
+                StudentResult.subject.like(f"{subject}%"),
+                StudentResult.subject.like(f"%{subject}"),
+            ]
+            # Use the OR operator to combine the conditions into a single
+            # condition that matches any of the location variations
+            conditions.append(or_(*subject_conditions))
+        if result:
+            # Build a list of conditions that match the location field
+            # using the LIKE operator and the % wildcard
+            result_conditions = [
+                StudentResult.result.like(f"%{result}%"),
+                StudentResult.result.like(f"{result}%"),
+                StudentResult.result.like(f"%{result}"),
+            ]
+            # Use the OR operator to combine the conditions into a single
+            # condition that matches any of the location variations
+            conditions.append(or_(*result_conditions))
+       
+
+        results = StudentResult.query.filter(and_(*conditions)).all()
+
+    return render_template(
+        "agentportal/results.html",
+        results=farmers, form=form,
+        filterform=form, page=page,
+        search=search
+    )
+
+
+
+@core.route("/students", methods=["GET", "POST"])
+@login_required
+def students():
+    form = FilterForm()
+    page = request.args.get('page', 1, type=int)
+    students = User.query.filter_by(role='student').all()
+#
+
+    
+    return render_template(
+        "agentportal/students.html",
+        students=students,
+        filterform=form, page=page,
+        
+    )
+
 
 
 @core.route("/farmers", methods=["GET", "POST"])
@@ -326,6 +475,376 @@ def farmer(id):
     return render_template("agentportal/farmer.html", farmer=farmer, form=form)
 
 
+
+
+@core.route("/result/<int:id>", methods=["POST", 'GET'])
+@login_required
+def result(id):
+    form = ResultForm()
+    result = StudentResult.query.filter_by(id=id).first()
+
+    if request.method == "POST":
+        result.index_number = form.index_number.data
+        # result.subject = form.subject.data
+        result.result = form.result.data
+   
+
+        db.session.commit()
+
+        return redirect(url_for("core.results"))
+
+    elif request.method == 'GET':
+        form.name.data = result.name
+        form.subject.data = result.subject
+        form.result.data = result.result
+      
+
+    return render_template("agentportal/result.html", result=result, form=form)
+
+
+
+@core.route("/student/<int:id>", methods=["POST", 'GET'])
+@login_required
+def student(id):
+    form = StudentForm()
+    student = User.query.filter_by(id=id).first()
+
+    if request.method == "POST":
+        student.name = form.name.data
+        student.index_number = form.index_number.data
+   
+
+        db.session.commit()
+
+        return redirect(url_for("core.students"))
+
+    elif request.method == 'GET':
+        form.name.data = student.name
+        form.index_number.data = student.index_number
+      
+
+    return render_template("agentportal/student.html", student=student, form=form)
+
+
+@core.route("/delete_farmer/<int:farmer_id>", methods=['POST', 'GET'])
+@login_required
+def delete_farmer(farmer_id):
+    farmer = Farmer.query.get_or_404(farmer_id)
+    db.session.delete(farmer)
+    db.session.commit()
+    return redirect(url_for('core.farmers'))
+
+@core.route("/delete_result/<int:result_id>", methods=['POST', 'GET'])
+@login_required
+def delete_result(result_id):
+    result = StudentResult.query.get_or_404(result_id)
+    db.session.delete(result)
+    db.session.commit()
+    return redirect(url_for('core.results'))
+
+
+@core.route("/api/delete_farmers", methods=['POST', 'GET'])
+def delete_farmers():
+    farmers = request.args.get('farmers')
+    farmers_list = [int(farmer) for farmer in farmers.split(",")]
+    successfully_deleted = []
+    failed = []
+
+    for thefarmer in farmers_list:
+        farmer = Farmer.query.filter_by(id=thefarmer).first()
+        if farmer:
+            db.session.delete(farmer)
+            db.session.commit()
+            successfully_deleted.append(thefarmer)
+        else:
+            failed.append(thefarmer)
+
+    payload = {
+        "status": True,
+        "message": " Farmers deleted",
+        "successful": successfully_deleted,
+        "failed": failed
+    }
+
+    return jsonify(payload), 200
+
+
+@core.route('/api/addfarmer', methods=['GET', 'POST'])
+# @jwt_required()
+def addplan():
+    farmer = Farmer.query.all()
+
+    first_name = request.json['first_name']
+    last_name = request.json['last_name']
+    premium_amount = request.json['premium_amount']
+    location = request.json['location']
+    number = request.json['number']
+
+    plan = Farmer(
+        first_name=first_name,
+        premium_amount=premium_amount,
+        last_name=last_name,
+        number=number,
+        location=location
+    )
+
+    db.session.add(farmer)
+    db.session.commit()
+    status = 1
+    if status == 1:
+        return jsonify(first_name, last_name, premium_amount, "success")
+    else:
+        return jsonify("Failed")
+
+
+
+
+# @core.route("/farmersapi", methods=["GET", "POST"])
+# def farmersapi():
+#     farmers = Farmer.query.all()
+#     farmer_list = []
+
+#     if farmers:
+#         for farmer in farmers:
+#             payload = {
+#                 "id": farmer.id,
+#                 "farmercode": farmer.farmercode,
+#                 "farmerName": farmer.last_name,
+#                 "premiumAmount": farmer.premium_amount,
+#                 "cooperative": farmer.cooperative,
+#                 "cashcode": farmer.cashcode,
+#                 "society": farmer.society,
+#                 "country": farmer.country,
+#                 "language": farmer.language,
+#                 "number": farmer.number
+#             }
+#             farmer_list.append(payload)
+
+#         context = {
+#             "status": True,
+#             "message": " Farmer found!",
+#             "data": farmer_list,
+#         }
+
+#         return jsonify(context), 200
+#     else:
+#         context = {
+#             "status": False,
+#             "message": "Farmer not found",
+#             "error": "null"
+#         }
+
+#         return jsonify(context), 404
+
+@core.route("/studentsapi", methods=["GET", "POST"])
+def studentsapi():
+    students = User.query.filter_by(role='student').all()
+    student_list = []
+
+    if students:
+        for student in students:
+            payload = {
+                "id": student.id,
+                "name": student.name,
+                "index_number": student.index_number,
+                "completed_year": student.completed_year,
+             
+            }
+            student_list.append(payload)
+
+        context = {
+            "status": True,
+            "message": " student found!",
+            "data": student_list,
+        }
+
+        return jsonify(context), 200
+    else:
+        context = {
+            "status": False,
+            "message": "student not found",
+            "error": "null"
+        }
+
+        return jsonify(context), 404
+
+@core.route("/resultsapi", methods=["GET", "POST"])
+def resultsapi():
+    results = StudentResult.query.all()
+    results_list = []
+    print("resultsapi")
+
+    if results:
+        for result in results:
+            payload = {
+                "id": result.id,
+                "name": result.student.name,
+                "subject": result.subject.name,
+                "result": result.result,
+                "completed_year": result.student.completed_year,
+                "index_number": result.index_number
+                
+            }
+            results_list.append(payload)
+
+        context = {
+            "status": True,
+            "message": " result found!",
+            "data": results_list,
+        }
+
+        return jsonify(context), 200
+    else:
+        context = {
+            "status": False,
+            "message": "result not found",
+            "error": "null"
+        }
+
+        return jsonify(context), 404
+
+@core.route("/studentapi/<int:id>", methods=["GET", "POST"])
+def studentapi(id):
+    user = User.query.filter_by(id=id).first()
+    results = StudentResult.query.filter_by(index_number=user.index_number).all()
+    results_list = []
+    print("studenting")
+    print(user)
+    print(results)
+
+    if results:
+        for result in results:
+            payload = {
+                "id": result.id,
+                "name": user.name,
+                "subject": result.subject.name,
+                "result": result.result,
+                "completed_year": result.student.completed_year,
+                "index_number": result.index_number
+                
+            }
+            results_list.append(payload)
+
+        context = {
+            "status": True,
+            "message": " result found!",
+            "data": results_list,
+        }
+
+        return jsonify(context), 200
+    else:
+        context = {
+            "status": False,
+            "message": "result not found",
+            "error": "null"
+        }
+
+        return jsonify(context), 404
+
+
+# @core.route("/report", methods=["GET"])
+# @login_required
+# def report():
+#     return render_template("agentportal/report.html")
+
+
+
+# @core.route('/ig', methods=['GET', 'POST'])
+# # @require_api_key
+# def checkresult():
+#     form = CheckResultForm()
+#     if request.method =="POST":
+#         user = User.query.filter_by(index_number=form.index_number.data).first()
+#         print(form.index_number.data)
+#         print(form.year.data)
+#         print(user)
+#         # result = StudentResult.query.filter_by(id=form.index_number.data).first()
+#         results = StudentResult.query.filter_by(index_number=form.index_number.data, year=form.year.data).all()
+#         print(result)
+#         return render_template("viewresult.html",results=results,user=user)
+#     return render_template("index.html",form=form)
+
+
+@core.route("/checkresultsapi", methods=["GET"])
+def checkresultsapi():
+    form = CheckResultForm()
+    ting = request.args.get("year")
+    print(ting)
+    # results = StudentResult.query.all()
+    results_list = []
+    if request.method=='GET':
+        results = StudentResult.query.filter_by(index_number=form.index_number.data, year=form.year.data).all()
+        print(form.index_number.data)
+        print(form.year.data)
+        print("results:")
+        print(results)
+        if results:
+            print("works")
+
+
+            for result in results:
+                payload = {
+                    "id": result.id,
+                    "name": result.name,
+                    "subject": result.subject.name,
+                    "result": result.result,
+                    "index_number":result.index_number
+                    
+                }
+                results_list.append(payload)
+                print(results_list)
+                print("results_list")
+
+            context = {
+                "status": True,
+                "message": " result found!",
+                "data": results_list,
+            }
+            print("context")
+            print(context)
+
+            return jsonify(context), 200
+        else:
+            print("not working")
+            context = {
+                "status": False,
+                "message": "results not found",
+                "error": "null"
+            }
+
+            return jsonify(context), 404
+
+# @core.route("/api/logs", methods=["GET", "POST"])
+# def logs():
+#     logs = EcomRequest.query.order_by(desc(EcomRequest.date))
+#     payload_list = []
+
+#     for log in logs:
+#         payload = {
+#             "id": log.id,
+#             "farmerName": log.farmers.last_name if log.farmer_id else "N/A",
+#             "farmercode": log.farmers.farmercode if log.farmer_id else "N/A",
+#             "cashcode": log.farmers.cashcode if log.farmer_id else "N/A",
+#             "premiumAmount": log.farmers.premium_amount if log.farmer_id else "N/A",
+#             "number": log.number,
+#             "disposition": log.disposition,
+#             "timestamp": log.date,
+#             "smsDisposition": log.sms_disposition,
+
+#         }
+#         payload_list.append(payload)
+
+#     context = {
+#         "status": True,
+#         "message": " Farmer  found!",
+#         "data": payload_list
+#     }
+
+#     return jsonify(context), 200
+
+
+
+
 @core.route('/uploadfarmer', methods=['GET', 'POST'])
 @login_required
 def uploadfarmer():
@@ -418,297 +937,7 @@ def uploadsummary():
 
     return render_template('agentportal/uploadsummary.html', len_added=len(data), data=data, form=form)
 
-
-@core.route("/delete_farmer/<int:farmer_id>", methods=['POST', 'GET'])
-@login_required
-def delete_farmer(farmer_id):
-    farmer = Farmer.query.get_or_404(farmer_id)
-    db.session.delete(farmer)
-    db.session.commit()
-    return redirect(url_for('core.farmers'))
-
-
-@core.route("/api/delete_farmers", methods=['POST', 'GET'])
-def delete_farmers():
-    farmers = request.args.get('farmers')
-    farmers_list = [int(farmer) for farmer in farmers.split(",")]
-    successfully_deleted = []
-    failed = []
-
-    for thefarmer in farmers_list:
-        farmer = Farmer.query.filter_by(id=thefarmer).first()
-        if farmer:
-            db.session.delete(farmer)
-            db.session.commit()
-            successfully_deleted.append(thefarmer)
-        else:
-            failed.append(thefarmer)
-
-    payload = {
-        "status": True,
-        "message": " Farmers deleted",
-        "successful": successfully_deleted,
-        "failed": failed
-    }
-
-    return jsonify(payload), 200
-
-
-@core.route('/api/addfarmer', methods=['GET', 'POST'])
-# @jwt_required()
-def addplan():
-    farmer = Farmer.query.all()
-
-    first_name = request.json['first_name']
-    last_name = request.json['last_name']
-    premium_amount = request.json['premium_amount']
-    location = request.json['location']
-    number = request.json['number']
-
-    plan = Farmer(
-        first_name=first_name,
-        premium_amount=premium_amount,
-        last_name=last_name,
-        number=number,
-        location=location
-    )
-
-    db.session.add(farmer)
-    db.session.commit()
-    status = 1
-    if status == 1:
-        return jsonify(first_name, last_name, premium_amount, "success")
-    else:
-        return jsonify("Failed")
-
-
-@core.route('/api/senddemosms', methods=['GET', 'POST'])
-# @require_api_key
-def senddemosms():
-    number = request.args.get('number')
-
-    url = 'http://rslr.connectbind.com:8080/bulksms/bulksms'
-    rpassword = environ.get('ROUTESMS_PASS')
-    data = {
-        'username': 'dlp-testacc',
-        'password': rpassword,
-        'type': '0',
-        'dlr': '1',
-        'destination': number[1:],
-        'source': 'test',
-        'message': 'Welcome to Delaphone’s Cloud Answering Service, partner with us to optimize your customer experience'
-    }
-
-    response = requests.post(url, data)
-    res = response.text.split("|")
-    payload = {"True": True, "res": res}
-    context = {
-        "status": True,
-        "message": " Message triggered",
-        "data": payload
-    }
-
-    return jsonify(context)
-
-
-@core.route('/api/checknumber', methods=['GET', 'POST'])
-# @require_api_key
-def checknumber():
-    number = request.args.get('number')
-    number = number.strip()
-
-    farmer = Farmer.query.filter_by(number=number).first()
-    if farmer is not None:
-        message = f"Hello {farmer.last_name}. Your 2022/2023 premium is GHS{farmer.premium_amount}. Your cash code is {farmer.cashcode}. Thank you, ECOM."
-
-        url = 'http://rslr.connectbind.com:8080/bulksms/bulksms'
-        route_sms_password = environ.get('ROUTESMS_PASS')
-        data = {
-            'username': 'dlp-testacc',
-            'password': route_sms_password,
-            'type': '0',
-            'dlr': '1',
-            'destination': number,
-            'source': 'ECOM',
-            'message': message
-        }
-
-        response = requests.post(url, data)
-
-        res = response.text.split("|")
-        ecom_request = EcomRequest(
-            number=number,
-            farmer_id=farmer.id,
-            disposition="200",
-            sms_disposition=res[0]
-        )
-
-        db.session.add(ecom_request)
-        db.session.commit()
-
-        payload = {
-            "True": True,
-            "firstName": farmer.first_name,
-            "lastName": farmer.last_name,
-            "premium_amount": farmer.premium_amount,
-            "location": farmer.location
-        }
-
-        context = {
-            "status": True,
-            "message": " Farmer found",
-            "data": payload
-        }
-        return jsonify(context), 200
-
-    else:
-        ecom_request = EcomRequest(
-            number=number,
-            farmer_id=None,
-            disposition="404",
-            sms_disposition="No sms sent",
-        )
-
-        db.session.add(ecom_request)
-        db.session.commit()
-        context = {
-            "status": False,
-            "message": "Farmer not found",
-            "error": "null"
-        }
-
-        return jsonify(context), 404
-
-
-@core.route("/farmersapi", methods=["GET", "POST"])
-def farmersapi():
-    farmers = Farmer.query.all()
-    farmer_list = []
-
-    if farmers:
-        for farmer in farmers:
-            payload = {
-                "id": farmer.id,
-                "farmercode": farmer.farmercode,
-                "farmerName": farmer.last_name,
-                "premiumAmount": farmer.premium_amount,
-                "cooperative": farmer.cooperative,
-                "cashcode": farmer.cashcode,
-                "society": farmer.society,
-                "country": farmer.country,
-                "language": farmer.language,
-                "number": farmer.number
-            }
-            farmer_list.append(payload)
-
-        context = {
-            "status": True,
-            "message": " Farmer found!",
-            "data": farmer_list,
-        }
-
-        return jsonify(context), 200
-    else:
-        context = {
-            "status": False,
-            "message": "Farmer not found",
-            "error": "null"
-        }
-
-        return jsonify(context), 404
-
-
-@core.route("/report", methods=["GET"])
-@login_required
-def report():
-    return render_template("agentportal/report.html")
-
-
-@core.route("/api/logs", methods=["GET", "POST"])
-def logs():
-    logs = EcomRequest.query.order_by(desc(EcomRequest.date))
-    payload_list = []
-
-    for log in logs:
-        payload = {
-            "id": log.id,
-            "farmerName": log.farmers.last_name if log.farmer_id else "N/A",
-            "farmercode": log.farmers.farmercode if log.farmer_id else "N/A",
-            "cashcode": log.farmers.cashcode if log.farmer_id else "N/A",
-            "premiumAmount": log.farmers.premium_amount if log.farmer_id else "N/A",
-            "number": log.number,
-            "disposition": log.disposition,
-            "timestamp": log.date,
-            "smsDisposition": log.sms_disposition,
-
-        }
-        payload_list.append(payload)
-
-    context = {
-        "status": True,
-        "message": " Farmer  found!",
-        "data": payload_list
-    }
-
-    return jsonify(context), 200
-
-
-@core.route("/resend_sms", methods=["GET", "POST"])
-def resend_sms():
-    logs = EcomRequest.query.filter(
-        EcomRequest.disposition == 200,
-        EcomRequest.sms_disposition != "1701",
-        EcomRequest.sms_attempts < 3
-    ).all()
-
-    for log in logs:
-        message = f"Hello {log.farmers.last_name}. Your 2022/2023 premium is GHS{log.farmers.premium_amount}. Your cash code is {log.farmers.cashcode}. Thank you, ECOM."
-        url = 'http://rslr.connectbind.com:8080/bulksms/bulksms'
-        route_sms_password = environ.get('ROUTESMS_PASS')
-        data = {
-            'username': 'dlp-testacc',
-            'password': route_sms_password,
-            'type': '0',
-            'dlr': '1',
-            'destination': log.number,
-            'source': 'ECOM',
-            'message': message
-        }
-
-        response = requests.post(url, data)
-        res = response.text.split("|")
-
-        particular_log = EcomRequest.query.filter_by(id=log.id).first()
-        particular_log.sms_disposition = res[0]
-        particular_log.sms_attempts += 1
-        db.session.commit()
-
-        # Send notification to Slack if this is the third failed attempt.
-        if particular_log.sms_attempts >= 3 and res[0] != '1701':
-            environment = os.getenv("APP_ENV").lower()
-            if environment == "staging":
-                environment = "🚧 Staging"
-            elif environment == "production":
-                environment = "🟢 Production"
-
-            slack_message = f"""Failure in Ecom DBMS:
-            ❌ Failed to send SMS after 3 attempts
-            Environment: {environment}
-            Timestamp: {particular_log.date}
-            Farmer Name: {particular_log.farmers.last_name.upper()}
-            Phone: {particular_log.number}
-            Farmer ID: {particular_log.farmer_id}
-            SMS Disposition: {particular_log.sms_disposition}
-            
-            
-            """
-
-            notify_slack(slack_message)
-
-    return "done"
-
-
-scheduler = BackgroundScheduler()
-scheduler.add_job(func=resend_sms, trigger="interval", seconds=600)
-scheduler.start()
-atexit.register(lambda: scheduler.shutdown())
+# scheduler = BackgroundScheduler()
+# scheduler.add_job(func=resend_sms, trigger="interval", seconds=600)
+# scheduler.start()
+# atexit.register(lambda: scheduler.shutdown())

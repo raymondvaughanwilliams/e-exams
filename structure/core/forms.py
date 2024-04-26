@@ -27,12 +27,34 @@ class UpdateSessionForm(FlaskForm):
 
 
 
-class JournalForm(FlaskForm):
-    date = DateField('Choose Date', [validators.DataRequired()],format='%d-%m-%Y')
-    text = StringField('Text', [validators.DataRequired()])
-    title = StringField('Title')
+class ResultForm(FlaskForm):
+    name = StringField('Text', [validators.DataRequired()])
+    subject = StringField('Text')
+    result = IntegerField('Result')
+    index_number = StringField('Index Number')
+
+    # subject= SelectField('Subject')
+    year = SelectField('Year', choices=[(str(year), str(year)) for year in range(2023, 2034)])
     submit = SubmitField('Add')
 
+class StudentForm(FlaskForm):
+    name = StringField('Text', [validators.DataRequired()])
+    subject = StringField('Text')
+    index_number = StringField('Index Number')
+    year = SelectField('Year', choices=[(str(year), str(year)) for year in range(2023, 2034)])
+    submit = SubmitField('Add')
+
+class CheckResultForm(FlaskForm):
+    
+    index_number = StringField('Index Number')
+    year = SelectField('Year', choices=[(str(year), str(year)) for year in range(2023, 2034)])
+    submit = SubmitField('CHECK')
+
+class CheckerForm(FlaskForm):
+    result = IntegerField('Result')
+    # subject= SelectField('Subject')
+    submit = SubmitField('Add')
+    
 
 class Addtherapist(Form):
     title = StringField('Title', [validators.DataRequired()])
@@ -105,6 +127,7 @@ class FarmerForm(Form):
     ordernumber = StringField('Order Number')
     society = StringField('Society')
     cashcode = StringField('Cashcode')
+    index_number = StringField('Index Number')
     uploadfile = FileField('Upload', validators=[FileRequired(), FileAllowed(['csv'])])
     submit = SubmitField('Submit') 
     

@@ -121,18 +121,26 @@ def login():
             print(session['name'])
             login_user(user)
             flash('Logged in successfully.')
+            if userr.role == "student":
+                print("logging student in")
+
+                return redirect(url_for('exam.exams'))
+            elif userr.role == "invigilator":
+                print("logging invigilator in")
+
+                return redirect(url_for('exam.iexams'))
 
 
 
 
             # If a user was trying to visit a page that requires a login
-            # flask saves that URL as 'next'.
-            next = request.args.get('next')
+            # # flask saves that URL as 'next'.
+            # next = request.args.get('next')
 
-            # So let's now check if that next exists, otherwise we'll go to
-            # the welcome page.
-            if next == None or not next[0]=='/':
-                next = url_for('core.agent_dashboard')
+            # # So let's now check if that next exists, otherwise we'll go to
+            # # the welcome page.
+            # if next == None or not next[0]=='/':
+            #     next = url_for('exam.exams')
             
 
             return redirect(next)
@@ -143,7 +151,7 @@ def login():
             # So let's now check if that next exists, otherwise we'll go to
             # the welcome page.
             if next == None or not next[0]=='/':
-                next = url_for('core.agent_dashboard')
+                next = url_for('exam.exams')
             
 
             return redirect(next)

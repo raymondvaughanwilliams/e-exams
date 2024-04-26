@@ -1,0 +1,75 @@
+{% extends "exam/invigilator/sidebar.html" %}
+{% block content %}
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container mt-3 " style="margin-top: 50px;">
+<h1>Add Question to Exam</h1>
+<form method="post">
+ 
+    <label for="question_text">Question:</label>
+    <input type="text" id="question_text" name="question_text" required>
+    <br>
+    <label for="answer">Possible Answers:</label>
+    <input type="text" id="answer" name="answer" required>
+    <input type="text" id="answer" name="answer" required>
+    <input type="text" id="answer" name="answer" required>
+    <input type="text" id="answer" name="answer" required>
+    <br>
+    <label for="correct_answer_index">Correct Answer Index (0-based):</label>
+    <input type="number" id="correct_answer_index" name="correct_answer_index" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+    ---------------------------------------------------------------------------------
+    
+
+
+<div class="table-responsive-sm">
+                                        <table class="table table-striped table-centered mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Question</th>
+            <th>Answers</th>
+            <th>Edit</th>
+            <th>Delete</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for question in questions %}
+                                                <tr>
+                                                    <td class="table-user">
+                                                      
+                                                            {{ question.question_text }}                                                    </td>
+                                                    <td>    
+                                                        {% for answer in question.answers %}
+                                                        {{ answer.answer_text }}
+                                                        {% endfor %}</td>
+                                                    <td><a href="{{ url_for('exam.edit_question', question_id=question.id) }}">Edit</a></td>
+                                                    <td>
+                                                        <form method="post" action="{{ url_for('exam.delete_question', question_id=question.id) }}" onsubmit="return confirm('Are you sure you want to delete this question?')">
+                                                            <input type="hidden" name="_method" value="DELETE">
+                                                            <input type="submit" value="Delete">
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
+{%endblock%}

@@ -1,0 +1,16 @@
+{% extends "exam/invigilator/sidebar.html" %}
+{% block content %}
+<h1>Edit Question</h1>
+<form method="post">
+    <label for="question_text">Question:</label>
+    <input type="text" id="question_text" name="question_text" value="{{ question.question_text }}" required>
+    <br>
+    <h2>Answers:</h2>
+    {% for answer in question.answers %}
+        <label for="answer_{{ answer.id }}">Answer:</label>
+        <input type="text" id="answer_{{ answer.id }}" name="answer_{{ answer.id }}" value="{{ answer.answer_text }}" required>
+        <br>
+    {% endfor %}
+    <input type="submit" value="Save Changes">
+</form>    </form>
+{%endblock%}

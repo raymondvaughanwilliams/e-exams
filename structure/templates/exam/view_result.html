@@ -1,0 +1,40 @@
+{% extends "web/base.html" %}
+{% block content %}
+<body>
+    <h1>Results</h1>
+    <p>Your score: {{ percentage }}%</p>
+</body>   
+    
+    
+    <!-- <script>
+        // JavaScript code to dynamically add and remove food rows
+        document.addEventListener('DOMContentLoaded', function () {
+            const foodsContainer = document.getElementById('foods-container');
+            const addFoodButton = document.getElementById('add-food');
+    
+            addFoodButton.addEventListener('click', function () {
+                const template = document.querySelector('.food-row');
+                const clone = template.cloneNode(true);
+    
+                // Generate unique names for the cloned form fields
+                const index = foodsContainer.childElementCount;
+                clone.querySelectorAll('input, select').forEach(field => {
+                    const originalName = field.getAttribute('name');
+                    if (originalName) {
+                        // Update the index in the name, price, and category attributes
+                        const newName = originalName.replace(/-(\d+)/, `-${index}`);
+                        field.setAttribute('name', newName);
+                    }
+                });
+    
+                clone.querySelector('.remove-food').addEventListener('click', function () {
+                    clone.remove();
+                });
+    
+                foodsContainer.appendChild(clone);
+            });
+        });
+    </script> -->
+
+    
+{%endblock%}

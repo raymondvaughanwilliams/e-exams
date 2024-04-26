@@ -1,0 +1,96 @@
+{% extends "exam/sidebar.html" %}
+{% block content %}
+<body onload="initializeCamera()">
+    <!-- Your HTML code -->
+
+    <div class="container margin_60_35">
+        <div class="row col-lg-12">
+            <div class="card col-lg-9">
+                <div class="box_style_2">
+                    <!-- <video id="video" width="440" height="250" autoplay></video> -->
+
+                        
+                        <h1>{{ exam.name }}</h1>
+                        <form  method="POST">
+                            <input type="hidden" name="exam_id" value="{{ exam.id }}">
+                            {% for question in questions %}
+                                <h3>{{ question.question_text }}</h3>
+                                <input type="hidden" name="question_{{ question.id }}" value="{{ question.id }}">
+                                <ul>
+                                    {% for answer in question.answers %}
+                                        <li>
+                                            <input type="radio" name="answer_{{ question.id }}" value="{{ answer.id }}"> {{ answer.answer_text }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            {% endfor %}
+                            <button type="submit">Submit Exam</button>
+                        </form>
+
+</div><!-- End container -->
+</div><!-- End container -->
+    <!-- End Content =============================================== -->
+<div class="col-lg-3">
+    <button onclick="takePicture()"></button>
+    <video id="video" width="350" height="480" autoplay></video>
+    <canvas id="canvas" width="350" height="480" style="display:none;"></canvas>
+    </div>
+</div>
+</body>
+
+    <script>
+        window.onload = function() {
+            
+          const video = document.getElementById('video');
+          const canvas = document.getElementById('canvas');
+          const context = canvas.getContext('2d');
+        
+          // Get user media
+          navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+              video.srcObject = stream;
+            })
+            .catch(function(err) {
+              console.log("An error occurred: " + err);
+            });
+        
+          function takePicture() {
+            // Draw video frame onto canvas
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        
+            // Get image data URL
+            const dataURL = canvas.toDataURL('image/png');
+            console.log('dataURL');
+            console.log(dataURL); // Here you can use the dataURL as needed
+            
+            // Send the picture to Flask route
+            sendData(dataURL);
+          }
+        
+          function sendData(imageData) {
+            const examId = "{{ exam.id }}";
+            // Send the image data to the Flask route using XHR or fetch
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '/save_picture', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({ image_data: imageData, exam_id: examId }));
+          }
+        
+          // Take two pictures at intervals
+          setTimeout(function() {
+            takePicture();
+            setTimeout(function() {
+              takePicture();
+            }, 1000); // Adjust the interval as needed
+          }, 1000); // Adjust the initial delay as needed
+        };
+        </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core@2.0.0/dist/tf-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter@2.0.0/dist/tf-converter.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl@2.0.0/dist/tf-backend-webgl.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-detection@0.0.1/dist/face-detection.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-data@2.0.0/dist/tf-data.min.js"></script> -->
+    <!-- <script src="/static/face-api.min.js"></script> -->
+    
+{%endblock%}

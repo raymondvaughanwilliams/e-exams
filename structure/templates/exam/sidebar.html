@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Dashboard | Techmin - Bootstrap 5 Admin & Dashboard Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
+	<meta content="Techzaa" name="author" />
+
+	<!-- App favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Daterangepicker css -->
+	<link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css">
+
+	<!-- Vector Map css -->
+	<link rel="stylesheet" href="assets/vendor/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='portalui/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}">
+
+	<!-- Theme Config Js -->
+	<script src="assets/js/config.js"></script>
+    <script src="{{ url_for('static',filename='portalui/techmin/layouts/assets/js/config.js') }}"></script>
+
+	<!-- App css -->
+	<link href="assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-style" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='portalui/techmin/layouts/assets/css/app.min.css') }}">
+
+	<!-- Icons css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='portalui/techmin/layouts/assets/css/icons.min.css') }}">
+
+</head>
+
+<body>
+	<!-- Begin page -->
+	<div class="wrapper">
+
+		<!-- ========== Topbar Start ========== -->
+<div class="navbar-custom">
+    <div class="topbar container-fluid">
+        <div class="d-flex align-items-center gap-1">
+
+            <!-- Topbar Brand Logo -->
+            <div class="logo-topbar">
+                <!-- Logo light -->
+                <a href="index.html" class="logo-light">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="small logo">
+                    </span>
+                </a>
+
+                <!-- Logo Dark -->
+                <a href="index.html" class="logo-dark">
+                    <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="dark logo">
+                    </span>
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="small logo">
+                    </span>
+                </a>
+            </div>
+
+            <!-- Sidebar Menu Toggle Button -->
+            <button class="button-toggle-menu">
+                <i class="mdi mdi-menu"></i>
+            </button>
+
+            <!-- Page Title -->
+            <h4 class="page-title d-none d-sm-block"></h4>
+        </div>
+
+        <ul class="topbar-menu d-flex align-items-center gap-3">
+            <li class="dropdown d-lg-none">
+                <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                    <i class="mdi mdi-magnify fs-2"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-animated dropdown-lg p-0">
+                    <form class="p-3">
+                        <input type="search" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                    </form>
+                </div>
+            </li>
+
+            
+
+                    <!-- item-->
+                    <a href="auth-logout.html" class="dropdown-item">
+                        <i class="ri-logout-circle-r-line align-middle me-1"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ========== Topbar End ========== -->
+
+		<!-- Left Sidebar Start -->
+		<div class="leftside-menu">
+
+		    <!-- Logo Light -->
+		    <a href="index.html" class="logo logo-light">
+		        <span class="logo-lg">
+		            <img src="/static/portalui/techmin/layouts/assets/images/logo.png" alt="logo">
+		        </span>
+		        <span class="logo-sm">
+		            <img src="/static/portalui/techmin/layouts/assets/images/logo-sm.png" alt="small logo">
+		        </span>
+		    </a>
+
+		    <!-- Logo Dark -->
+		    <a href="index.html" class="logo logo-dark">
+		        <span class="logo-lg">
+		            <img src="/static/portalui/techmin/layouts/assets/images/logo-dark.png" alt="dark logo">
+		        </span>
+		        <span class="logo-sm">
+		            <img src="/static/portalui/techmin/layouts/assets/images/logo-sm.png" alt="small logo">
+		        </span>
+		    </a>
+
+		    <!-- Sidebar -->
+		    <div data-simplebar>
+		        <ul class="side-nav">
+		            
+
+            
+		            <li class="side-nav-item">
+		                <a href="{{ url_for('exam.exams') }}" class="side-nav-link">
+		                    <i class="ri-calendar-line"></i>
+		                    <span> Exams</span>
+
+		                </a>
+		            </li>
+           
+		            <li class="side-nav-item">
+		                <a href="" class="side-nav-link">
+		                    <i class="ri-artboard-line"></i>
+		                    <span>Results</span>
+		                </a>
+		            </li>
+
+		            <li class="side-nav-item">
+		                <a data-bs-toggle="collapse" href="{{ url_for('users.logout') }}" aria-expanded="false" aria-controls="sidebarPagesinvoice" class="side-nav-link">
+		                    <i class="ri-article-line"></i>
+		                    <span>Logout</span>
+		                    <span class="menu-arrow"></span>
+
+		                </a>
+		              
+		            </li>
+
+		          
+		                    </ul>
+		                </div>
+		            </li>
+		        </ul>
+		    </div>
+		</div>
+		<!-- Left Sidebar End -->
+		
+
+		<!-- ============================================================== -->
+		<!-- Start Page Content here -->
+		<!-- ============================================================== -->
+
+		<div class="content-page">
+			<div class="content">
+
+				<!-- Start Content-->
+				<div class="container-fluid">
+
+
+
+                    {% block content %}
+
+                    {% endblock %}
+
+
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <script>document.write(new Date().getFullYear())</script> © Techmin - Theme by <b>Techzaa</b>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>

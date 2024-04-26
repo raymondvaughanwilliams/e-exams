@@ -1,0 +1,1012 @@
+Uri: https://apexcharts.com/samples/assets/github-data.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\samples\assets\github-data.js
+Content Type: application/javascript
+
+Uri: https://apexcharts.com/samples/assets/irregular-data-series.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\samples\assets\irregular-data-series.js
+Content Type: application/javascript
+
+Uri: https://apexcharts.com/samples/assets/ohlc.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\samples\assets\ohlc.js
+Content Type: application/javascript
+
+Uri: https://apexcharts.com/samples/assets/series1000.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\samples\assets\series1000.js
+Content Type: application/javascript
+
+Uri: https://apexcharts.com/samples/assets/stock-prices.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\samples\assets\stock-prices.js
+Content Type: application/javascript
+
+Uri: https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.8.17/dayjs.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\ajax\libs\dayjs\1.8.17\dayjs.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\css2
+Content Type: text/css
+
+Uri: https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);:root{--tz-logo-lg-height:30px;--tz-logo-sm-height:30px;--tz-leftbar-width:275px;--tz-leftbar-width-md:160px;--tz-leftbar-width-sm:80px;--tz-leftbar-condensed-height:1500px;--tz-topbar-height:75px;--tz-menu-item-icon-size:1.1rem;--tz-menu-item-font-size:15px;--tz-menu-item-padding-x:12px;--tz-menu-item-padding-y:10px;--tz-footer-height:60px}html[data-menu-color=light]{--tz-menu-bg:
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\css2-1
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7V1s.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiByp8kv8JHgFVrLCz7V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDD4V1s.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiByp8kv8JHgFVrLDD4V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDz8V1s.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiByp8kv8JHgFVrLDz8V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6V1s.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiByp8kv8JHgFVrLEj6V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLFj_V1s.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiByp8kv8JHgFVrLFj_V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9V1s.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiByp8kv8JHgFVrLGT9V1s.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrFJA.ttf
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\s\poppins\v21\pxiEyp8kv8JHgFVrFJA.ttf
+Content Type: font/ttf
+
+Uri: https://techzaa.getappui.com/techmin/layouts/apps-calendar.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\apps-calendar.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/apps-invoice-report.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\apps-invoice-report.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/apps-invoice.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\apps-invoice.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/apps-kanban-board.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\apps-kanban-board.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/css/app.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\css\app.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/css/icons.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\css\icons.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/bootstrap-icons.woff2?1fa40e8900654d2863d011707b9fb6f2
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\bootstrap-icons.woff2
+Content Type: font/woff2
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/bootstrap-icons.woff?1fa40e8900654d2863d011707b9fb6f2
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\bootstrap-icons.woff
+Content Type: font/woff
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/materialdesignicons-webfont.eot?
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\materialdesignicons-webfont-1.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/materialdesignicons-webfont.eot?v=7.2.96
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\materialdesignicons-webfont.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/materialdesignicons-webfont.ttf?v=7.2.96
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\materialdesignicons-webfont.ttf
+Content Type: font/ttf
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/materialdesignicons-webfont.woff2?v=7.2.96
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\materialdesignicons-webfont.woff2
+Content Type: font/woff2
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/materialdesignicons-webfont.woff?v=7.2.96
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\materialdesignicons-webfont.woff
+Content Type: font/woff
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/remixicon.eot?t=1681573354175
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\remixicon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/remixicon.svg?t=1681573354175
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\remixicon.svg
+Content Type: image/svg+xml
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/remixicon.ttf?t=1681573354175
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\remixicon.ttf
+Content Type: font/ttf
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/remixicon.woff2?t=1681573354175
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\remixicon.woff2
+Content Type: font/woff2
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/fonts/remixicon.woff?t=1681573354175
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\fonts\remixicon.woff
+Content Type: font/woff
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/animation-bg.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\animation-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/auth-bg-dark.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\auth-bg-dark.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/auth-bg.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\auth-bg.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/auth-img.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\auth-img.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/bg-profile.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\bg-profile.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/brands/dribbble.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\brands\dribbble.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/brands/email.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\brands\email.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/brands/Facebook-logo.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\brands\Facebook-logo.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/brands/pinterest.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\brands\pinterest.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/brands/twitter.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\brands\twitter.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/brands/website.webp
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\brands\website.webp
+Content Type: 
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/favicon.ico
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\favicon.ico
+Content Type: image/vnd.microsoft.icon
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/flags/germany.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\flags\germany.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/flags/italy.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\flags\italy.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/flags/russia.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\flags\russia.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/flags/spain.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\flags\spain.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/flags/us.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\flags\us.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/logo-dark.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\logo-dark.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/logo-sm.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\logo-sm.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/logo.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\logo.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-1.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-1.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-2.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-2.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-3.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-3.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-4.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-4.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-5.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-5.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-6.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-6.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/small/small-7.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\small\small-7.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/svg/404.svg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\svg\404.svg
+Content Type: image/svg+xml
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/svg/500.svg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\svg\500.svg
+Content Type: image/svg+xml
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/svg/logout.svg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\svg\logout.svg
+Content Type: image/svg+xml
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/svg/under_maintenance.png
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\svg\under_maintenance.png
+Content Type: image/png
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-1.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-1.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-10.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-10.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-11.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-11.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-12.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-12.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-2.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-2.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-3.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-3.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-4.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-4.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-5.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-5.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-6.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-6.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-7.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-7.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-8.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-8.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/images/users/avatar-9.jpg
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\images\users\avatar-9.jpg
+Content Type: image/jpeg
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/app.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\app.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/config.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\config.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/apex.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\apex.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/calendar.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\calendar.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/chartjs-area.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\chartjs-area.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/chartjs-bar.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\chartjs-bar.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/chartjs-line.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\chartjs-line.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/chartjs-other.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\chartjs-other.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/component.dragula.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\component.dragula.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/dashboard.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\dashboard.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/datatable.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\datatable.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/fileupload.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\fileupload.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/form-imagecrop.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\form-imagecrop.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/form-wizard.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\form-wizard.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/form-xeditable.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\form-xeditable.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/google-maps.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\google-maps.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/icons-bootstrap.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\icons-bootstrap.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/icons-lucide.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\icons-lucide.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/icons-mdi.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\icons-mdi.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/icons-remix.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\icons-remix.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/profile.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\profile.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/quilljs.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\quilljs.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/range-slider.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\range-slider.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/responsive-table.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\responsive-table.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/sparkline.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\sparkline.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/tabledit.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\tabledit.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/timepicker.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\timepicker.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/toastr.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\toastr.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/typehead.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\typehead.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/pages/vector-maps.init.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\pages\vector-maps.init.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/js/vendor.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\js\vendor.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\jquery-jvectormap-1.2.2.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\jquery-jvectormap-1.2.2.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-au-mill-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-au-mill-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-ca-lcc-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-ca-lcc-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-es-merc.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-es-merc.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-es-mill.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-es-mill.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-europe-mill-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-europe-mill-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-fr-merc-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-fr-merc-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-in-mill-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-in-mill-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-uk-mill-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-uk-mill-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-il-chicago-mill-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-us-il-chicago-mill-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-us-merc-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\admin-resources\jquery.vectormap\maps\jquery-jvectormap-world-mill-en.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/apexcharts/apexcharts.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\apexcharts\apexcharts.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-datepicker\css\bootstrap-datepicker.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-datepicker\js\bootstrap-datepicker.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-maxlength/bootstrap-maxlength.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-maxlength\bootstrap-maxlength.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-timepicker/css/bootstrap-timepicker.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-timepicker\css\bootstrap-timepicker.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-timepicker/js/bootstrap-timepicker.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-timepicker\js\bootstrap-timepicker.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-touchspin\jquery.bootstrap-touchspin.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\bootstrap-touchspin\jquery.bootstrap-touchspin.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/chart.js/chart.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\chart.js\chart.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/cropper/cropper.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\cropper\cropper.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/cropper/cropper.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\cropper\cropper.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-bs5/css/dataTables.bootstrap5.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-bs5\css\dataTables.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-bs5\js\dataTables.bootstrap5.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-buttons-bs5\css\buttons.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-buttons-bs5/js/buttons.bootstrap5.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-buttons-bs5\js\buttons.bootstrap5.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-buttons/js/buttons.flash.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-buttons\js\buttons.flash.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-buttons/js/buttons.html5.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-buttons\js\buttons.html5.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-buttons/js/buttons.print.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-buttons\js\buttons.print.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-buttons/js/dataTables.buttons.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-buttons\js\dataTables.buttons.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-fixedcolumns-bs5\css\fixedColumns.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-fixedcolumns-bs5\js\fixedColumns.bootstrap5.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-fixedheader-bs5\css\fixedHeader.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-fixedheader\js\dataTables.fixedHeader.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-keytable/js/dataTables.keyTable.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-keytable\js\dataTables.keyTable.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-responsive-bs5\css\responsive.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-responsive-bs5\js\responsive.bootstrap5.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-responsive\js\dataTables.responsive.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-select-bs5/css/select.bootstrap5.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-select-bs5\css\select.bootstrap5.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net-select/js/dataTables.select.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net-select\js\dataTables.select.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/datatables.net/js/jquery.dataTables.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\datatables.net\js\jquery.dataTables.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/daterangepicker/daterangepicker.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\daterangepicker\daterangepicker.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/daterangepicker/daterangepicker.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\daterangepicker\daterangepicker.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/daterangepicker/moment.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\daterangepicker\moment.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/dragula/dragula.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\dragula\dragula.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/dropzone/min/dropzone.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\dropzone\min\dropzone.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/flatpickr/flatpickr.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\flatpickr\flatpickr.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/flatpickr/flatpickr.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\flatpickr\flatpickr.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/fullcalendar/main.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\fullcalendar\main.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/fullcalendar/main.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\fullcalendar\main.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/gmaps/gmaps.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\gmaps\gmaps.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/handlebars/handlebars.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\handlebars\handlebars.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\ion-rangeslider\js\ion.rangeSlider.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/jquery-mask-plugin/jquery.mask.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\jquery-mask-plugin\jquery.mask.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/jquery-sparkline/jquery.sparkline.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\jquery-sparkline\jquery.sparkline.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/jquery-tabledit/jquery.tabledit.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\jquery-tabledit\jquery.tabledit.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/jquery-toast-plugin/jquery.toast.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\jquery-toast-plugin\jquery.toast.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/jquery-toast-plugin/jquery.toast.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\jquery-toast-plugin\jquery.toast.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/lucide/umd/lucide.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\lucide\umd\lucide.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/moment/min/moment.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\moment\min\moment.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/quill/quill.bubble.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\quill\quill.bubble.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/quill/quill.core.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\quill\quill.core.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/quill/quill.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\quill\quill.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/quill/quill.snow.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\quill\quill.snow.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/select2/css/select2.min.css
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\select2\css\select2.min.css
+Content Type: text/css
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/select2/js/select2.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\select2\js\select2.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/typeahead.js/typeahead.bundle.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\typeahead.js\typeahead.bundle.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/assets/vendor/x-editable/bootstrap-editable/js/bootstrap-editable.min.js
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\assets\vendor\x-editable\bootstrap-editable\js\bootstrap-editable.min.js
+Content Type: text/javascript
+
+Uri: https://techzaa.getappui.com/techmin/layouts/auth-forgotpw.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\auth-forgotpw.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/auth-lock-screen.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\auth-lock-screen.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/auth-login.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\auth-login.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/auth-logout.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\auth-logout.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/auth-register.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\auth-register.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/charts-apex.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\charts-apex.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/charts-chartjs.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\charts-chartjs.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/charts-sparklines.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\charts-sparklines.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/error-404-alt.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\error-404-alt.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/error-404.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\error-404.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/error-500.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\error-500.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/extended-portlets.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\extended-portlets.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/extended-range-slider.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\extended-range-slider.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/extended-scrollbar.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\extended-scrollbar.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-advanced.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-advanced.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-editors.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-editors.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-elements.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-elements.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-fileuploads.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-fileuploads.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-image-crop.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-image-crop.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-validation.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-validation.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-wizard.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-wizard.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/form-x-editable.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\form-x-editable.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/icons-bootstrap.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\icons-bootstrap.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/icons-lucide.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\icons-lucide.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/icons-mdi.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\icons-mdi.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/icons-remixicons.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\icons-remixicons.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/index.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\index.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/layouts-boxed.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\layouts-boxed.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/layouts-collapsed-sidebar.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\layouts-collapsed-sidebar.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/layouts-light-sidebar.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\layouts-light-sidebar.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/layouts-sm-sidebar.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\layouts-sm-sidebar.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/layouts-unsticky-layout.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\layouts-unsticky-layout.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/maps-google.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\maps-google.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/maps-vector.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\maps-vector.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-contact-list.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-contact-list.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-faq.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-faq.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-maintenance.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-maintenance.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-pricing.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-pricing.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-profile.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-profile.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-starter.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-starter.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/pages-timeline.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\pages-timeline.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/tables-basic.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\tables-basic.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/tables-datatable.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\tables-datatable.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/tables-editable.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\tables-editable.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/tables-responsive.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\tables-responsive.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-accordions.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-accordions.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-alerts.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-alerts.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-avatars.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-avatars.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-badges.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-badges.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-breadcrumb.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-breadcrumb.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-button-group.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-button-group.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-buttons.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-buttons.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-cards.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-cards.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-carousel.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-carousel.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-close-button.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-close-button.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-collapse.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-collapse.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-dropdowns.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-dropdowns.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-embed-video.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-embed-video.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-grid.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-grid.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-links.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-links.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-list-group.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-list-group.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-modals.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-modals.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-navbar.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-navbar.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-offcanvas.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-offcanvas.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-pagination.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-pagination.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-placeholders.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-placeholders.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-popovers.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-popovers.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-progress.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-progress.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-scrollspy.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-scrollspy.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-spinners.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-spinners.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-tabs.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-tabs.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-toasts.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-toasts.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-tooltips.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-tooltips.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-typography.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-typography.html
+Content Type: text/html
+
+Uri: https://techzaa.getappui.com/techmin/layouts/ui-utilities.html
+File Name: C:\Downloaded Web Sites\techzaa.getappui.com\techmin\layouts\ui-utilities.html
+Content Type: text/html
+

@@ -28,14 +28,10 @@ class User(db.Model,UserMixin):
     location = db.Column(db.String(128))
     role = db.Column(db.String,nullable=True)
     phone_number = db.Column(db.String)
-    biography = db.Column(db.String)
+    # biography = db.Column(db.String)
     status=db.Column(db.String,default="unverified")
-    business_name = db.Column(db.String)
-    certificate = db.Column(db.String)
-    parts = db.Column(db.String(250))
-    cars = db.Column(db.String(250))
-    returnable  = db.Column(db.String(250),default="no")
-    return_period = db.Column(db.String(250),default="none")
+    index_number = db.Column(db.String)
+    completed_year=db.Column(db.String)
     # rec_payment_id = db.Column(db.Integer,db.ForeignKey('payments.id'),nullable=True)
     # payments = db.relationship('Payment',backref='users',lazy=True)
 
@@ -252,7 +248,31 @@ class Testimonial(db.Model):
         return f"Post ID: {self.id} -- {self.name} -- {self.company} -- {self.text} -- {self.rating}"
 
 
+class StudentResult(db.Model):
+    __tablename__ = "student_results"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128), nullable=False)
+    subject = db.Column(db.String(128), nullable=False)
+    year = db.Column(db.String(128))
+    result = db.Column(db.Integer, nullable=False)
+    index_number = db.Column(db.String(128))
+    student_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    student = db.relationship("User", foreign_keys=[student_id])
+    subject_id = db.Column(db.Integer, db.ForeignKey('subjects.id'))
+    subject = db.relationship("Subject", foreign_keys=[subject_id])
 
+    def __repr__(self):
+        return f'<StudentResult {self.name}>'
+
+
+class Subject(db.Model):
+    __tablename__ = "subjects"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(128), nullable=False)
+
+
+    def __repr__(self):
+        return f'<StudentResult {self.name}>'
 
 
 
@@ -338,6 +358,61 @@ class EcomRequest(db.Model):
  
 
 
+class Exam(db.Model):
+    __tablename__ = 'exams'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    jitsi_room_id = db.Column(db.String(100))
+    # status = db.Column(db.String(100), default='active')
+
+class Question(db.Model):
+    __tablename__ = 'questions'
+    id = db.Column(db.Integer, primary_key=True)
+    exam_id = db.Column(db.Integer, db.ForeignKey('exams.id'))
+    question_text = db.Column(db.Text)
+    answers = db.relationship('Answer', backref='questions', lazy=True)
+
+class Answer(db.Model):
+    __tablename__ = 'answers'
+    id = db.Column(db.Integer, primary_key=True)
+    question_id = db.Column(db.Integer, db.ForeignKey('questions.id'))
+    answer_text = db.Column(db.Text)
+    is_correct = db.Column(db.Boolean)
+
+
+class Submission(db.Model):
+    __tablename__ = 'submissions'
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    user = db.relationship("User", foreign_keys=[user_id])
+    exam_id = db.Column(db.Integer, db.ForeignKey('exams.id'))
+    exam = db.relationship("Exam", foreign_keys=[exam_id])
+    question_id = db.Column(db.Integer, db.ForeignKey('questions.id'))
+    question = db.relationship("Question", foreign_keys=[question_id])
+    answer_id = db.Column(db.Integer, db.ForeignKey('answers.id'))
+    answer = db.relationship("Answer", foreign_keys=[answer_id])
+
+
+
+class Photo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    # image_path = db.String(200)
+    image_location = db.Column(db.String(100))
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    user = db.relationship("User", foreign_keys=[user_id])
+    exam_id = db.Column(db.Integer, db.ForeignKey('exams.id'))
+    exam = db.relationship("Exam", foreign_keys=[exam_id])
+
+class Images(db.Model):
+    id   = db.Column(db.Integer, primary_key=True)
+    image_path = db.String(200)
+    image_location = db.String(200)
+    img_src = db.String(200)
+    # srccc
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+    user = db.relationship("User", foreign_keys=[user_id])
+    exam_id = db.Column(db.Integer, db.ForeignKey('exams.id'))
+    exam = db.relationship("Exam", foreign_keys=[exam_id])
 
 
 @login_manager.user_loader
