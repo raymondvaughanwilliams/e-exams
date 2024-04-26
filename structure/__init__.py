@@ -84,7 +84,7 @@ app.config["MAIL_PASSWORD"] = os.environ.get('MAIL_PASSWORD')
 mail = Mail(app)
 # emailpassword = os.environ.get('MAIL_PASSWORD')
 
-from structure.core.views import core
+# from structure.core.views import core
 from structure.users.views import users
 from structure.error_pages.handlers import error_pages
 
@@ -94,6 +94,6 @@ from structure.exam.views import exam
 
 app.register_blueprint(exam)
 
-app.register_blueprint(core)
+# app.register_blueprint(core)
 app.register_blueprint(users)
 app.register_blueprint(error_pages)
