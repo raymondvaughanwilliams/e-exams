@@ -134,4 +134,4 @@ dmypy.json
 .fleet/
 .DS_Store
 
-**/data.sqlite
+# **/data.sqlite
