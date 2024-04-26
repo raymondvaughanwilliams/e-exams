@@ -23,8 +23,10 @@ app.config['SECRET_KEY'] = 'asecretkey'
 ### DATABASE SETUP ##########
 ########################
 basedir = os.path.abspath(os.path.dirname(__file__))
+db_path = os.path.join(basedir, 'data.sqlite')
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.getenv('DB_LOCATION')  # os.path.join(basedir,'data.sqlite')'sqlite:///'+os.path.join(basedir,'data.sqlite')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.path.join(basedir,'data.sqlite')  # os.path.join(basedir,'data.sqlite')'sqlite:///'+os.path.join(basedir,'data.sqlite')
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.path.join(basedir,'data.sqlite')  # os.path.join(basedir,'data.sqlite')'sqlite:///'+os.path.join(basedir,'data.sqlite')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + db_path
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
