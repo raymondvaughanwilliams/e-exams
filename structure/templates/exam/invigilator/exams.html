@@ -22,9 +22,8 @@
                                     <div class="col-md-4">
                                         <div class="card border-secondary border">
                                             <div class="card-body">
-                                                <h5 class="card-title">{{exam.name}}</h5>
+                                                <h5 class="card-title"><a href="{{url_for('exam.add_question',exam_id=exam.id)}}">{{exam.name}}</a></h5>
                                              
-                                                <a href="{{url_for('exam.iresults',exam_id=exam.id)}}" class="btn btn-secondary btn-sm">Results</a>
                                                 <a href="{{url_for('exam.infractions',exam_id=exam.id)}}" class="btn btn-secondary btn-sm"> Infractions</a>
                                             </div> <!-- end card-body-->
                                         </div> <!-- end card-->

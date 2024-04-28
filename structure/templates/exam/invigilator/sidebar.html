@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Dashboard | Techmin - Bootstrap 5 Admin & Dashboard Template</title>
+	<title>Invigilation Assistance System</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta content="A fully responsive admin theme which can be used to build CRM, CMS,ERP etc." name="description" />
 	<meta content="Techzaa" name="author" />
@@ -100,7 +100,7 @@
             
 
                     <!-- item-->
-                    <a href="auth-logout.html" class="dropdown-item">
+                    <a href="{{ url_for('users.logout') }}" class="dropdown-item">
                         <i class="ri-logout-circle-r-line align-middle me-1"></i>
                         <span>Logout</span>
                     </a>
@@ -115,22 +115,22 @@
 		<div class="leftside-menu">
 
 		    <!-- Logo Light -->
-		    <a href="index.html" class="logo logo-light">
+			<a href="index.html" class="logo logo-light">
 		        <span class="logo-lg">
-		            <img src="/static/portalui/techmin/layouts/assets/images/logo.png" alt="logo">
+		            <img src="/static/images/examlogo.jpeg" alt="logo">
 		        </span>
 		        <span class="logo-sm">
-		            <img src="/static/portalui/techmin/layouts/assets/images/logo-sm.png" alt="small logo">
+		            <img src="/static/images/examlogo.jpg" alt="small logo">
 		        </span>
 		    </a>
 
 		    <!-- Logo Dark -->
 		    <a href="index.html" class="logo logo-dark">
 		        <span class="logo-lg">
-		            <img src="/static/portalui/techmin/layouts/assets/images/logo-dark.png" alt="dark logo">
+		            <img src="/static/images/examlogo.jpg" alt="dark logo">
 		        </span>
 		        <span class="logo-sm">
-		            <img src="/static/portalui/techmin/layouts/assets/images/logo-sm.png" alt="small logo">
+		            <img src="/static/images/examlogo.jpg" alt="small logo">
 		        </span>
 		    </a>
 
@@ -155,7 +155,7 @@
 		            </li>
            
 		            <li class="side-nav-item">
-		                <a href="" class="side-nav-link">
+		                <a href="{{ url_for('exam.invigilator_results') }}" class="side-nav-link">
 		                    <i class="ri-artboard-line"></i>
 		                    <span>Results</span>
 		                </a>

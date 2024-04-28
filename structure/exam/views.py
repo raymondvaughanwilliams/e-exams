@@ -18,7 +18,7 @@ from structure import db,mail ,photos,app
 # from structure.core.forms import FilterForm,SipRequestForm , IssueForm,NumberSearchForm,ExtForm
 # from structure.about.forms import AboutForm
 from werkzeug.utils import secure_filename
-from structure.models import Exam,Question,Answer ,Submission ,Photo ,Images
+from structure.models import Exam,Question,Answer ,Submission ,Photo ,Images ,User
 from PIL import Image
 # import pytesseract 
 # from io import BytesIO
@@ -76,6 +76,10 @@ def exams():
 
 @exam.route('/exams/<int:exam_id>/questions', methods=['GET', 'POST'])
 def questions(exam_id):
+    submissions = Submission.query.filter_by(user_id=session['id'], exam_id=exam_id).first()
+    if submissions:
+        session['msg'] = 'Exam already submitted'
+        return redirect(url_for('exam.user_exam_results', exam_id=exam_id,user_id=session['id']))
     exam = Exam.query.get_or_404(exam_id)
     questions = Question.query.filter_by(exam_id=exam_id).all()
 
@@ -113,7 +117,7 @@ def questions(exam_id):
 
         # Redirect to view results page after submitting the exam'
         print(exam_id)
-        return redirect(url_for('exam.view_results', exam_id=exam_id,user_id=session['id']))
+        return redirect(url_for('exam.user_exam_results', exam_id=exam_id,user_id=session['id']))
 
     return render_template('exam/questions.html', exam=exam, questions=questions)
 
@@ -124,6 +128,94 @@ def view_answers(question_id):
     question = Question.query.get_or_404(question_id)
     answers = Answer.query.filter_by(question_id=question_id).all()
     return render_template('answers.html', question=question, answers=answers)
+
+@exam.route('/results')
+def user_results():
+    user_id=session['id']
+    # Query distinct exams for the given user
+    distinct_results = db.session.query(Exam).join(Submission, Submission.exam_id == Exam.id)\
+        .filter(Submission.user_id == user_id).distinct().all()
+    
+    return render_template('exam/results.html', user_id=user_id, exams=distinct_results)
+
+
+@exam.route('/<int:user_id>/exam/<int:exam_id>/results')
+def user_exam_results(user_id, exam_id):
+    # Query submissions for the given user and exam
+    user_exam_submissions = db.session.query(Submission, Exam, Answer)\
+        .join(Exam, Submission.exam_id == Exam.id)\
+        .join(Answer, Submission.answer_id == Answer.id)\
+        .filter(Submission.user_id == user_id, Submission.exam_id == exam_id)\
+        .all()
+
+    # Calculate percentage score
+    total_questions = len(user_exam_submissions)
+    correct_answers = sum(answer.is_correct for submission, exam, answer in user_exam_submissions)
+    if total_questions > 0:
+        percentage_score = (correct_answers / total_questions) * 100
+    else:
+        percentage_score = 0
+
+    # Prepare exam results
+    exam_results = []
+    for submission, exam, answer in user_exam_submissions:
+        exam_info = {
+            'exam_id': exam.id,
+            'exam_name': exam.name,
+            'exam_jitsi_room_id': exam.jitsi_room_id,
+            'question_text': submission.question.question_text,
+            'answer_text': answer.answer_text,
+            'is_correct': answer.is_correct
+        }
+        exam_results.append(exam_info)
+
+    return render_template('exam/exam_results.html', exam_results=exam_results, percentage_score=percentage_score)
+
+
+# @app.route('/<int:user_id>/exam_results')
+# def user_exam_results(user_id):
+#     # Query submissions for the given user and join with Exam and Answer tables
+#     user_submissions = db.session.query(Submission, Exam, Answer)\
+#         .join(Exam, Submission.exam_id == Exam.id)\
+#         .join(Answer, Submission.answer_id == Answer.id)\
+#         .filter(Submission.user_id == user_id)\
+#         .all()
+
+#     # Initialize variables to calculate score
+#     total_questions = 0
+#     correct_answers = 0
+
+#     # Prepare a list to store exam results
+#     exam_results = []
+
+#     # Iterate over user submissions
+#     for submission, exam, answer in user_submissions:
+#         # Extract relevant information
+#         exam_info = {
+#             'exam_id': exam.id,
+#             'exam_name': exam.name,
+#             'exam_jitsi_room_id': exam.jitsi_room_id,
+#             'question_text': submission.question.question_text,
+#             'answer_text': answer.answer_text,
+#             'is_correct': answer.is_correct
+#         }
+#         exam_results.append(exam_info)
+
+#         # Increment question count
+#         total_questions += 1
+#         # Increment correct answer count
+#         if answer.is_correct:
+#             correct_answers += 1
+
+#     # Calculate percentage score
+#     if total_questions > 0:
+#         percentage_score = (correct_answers / total_questions) * 100
+#     else:
+#         percentage_score = 0
+
+#     # Render the HTML template with exam results and percentage score
+#     return render_template('exam/exam_results.html', exam_results=exam_results, percentage_score=percentage_score)
+
 
 @exam.route('/add_submission', methods=['GET', 'POST'])
 def add_submission():
@@ -423,7 +515,24 @@ def infractions(exam_id):
 
 
 
+@exam.route('/invigilator_results')
+def invigilator_results():
+    distinct_users_per_exam = db.session.query(Exam, Submission, User)\
+        .join(Submission, Submission.exam_id == Exam.id)\
+        .join(User, User.id == Submission.user_id)\
+        .group_by(Exam.id, User.id)\
+        .distinct(User.id)\
+        .all()
 
+    # Organize the data into a dictionary with exams as keys and lists of distinct students as values
+    exam_students = {}
+    for exam, submission, user in distinct_users_per_exam:
+        if exam not in exam_students:
+            exam_students[exam] = []
+        exam_students[exam].append(user)
+
+
+    return render_template('exam/invigilator/results.html', exam_students=exam_students)
 
 
 # @exam.route('/upload_image', methods=['POST'])
