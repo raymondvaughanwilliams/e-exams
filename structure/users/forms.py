@@ -18,7 +18,7 @@ class RegistrationForm(FlaskForm):
     name = StringField('Name',validators=[DataRequired()])
     last_name = StringField('Last Name')
     number = StringField('Number',validators=[DataRequired()])
-    role = SelectField('Sign Up as a:',validators=[DataRequired()],choices=[('user', 'user'), ('vendor','vendor')])
+    role = SelectField('Sign Up as a:',validators=[DataRequired()],choices=[('student', 'student'), ('invigilator','invigilator'),('examiner','examiner')])
     password = PasswordField('Password',validators=[DataRequired(),EqualTo('pass_confirm',message='Passwords must match!')])
     pass_confirm = PasswordField('Confirm Password',validators=[DataRequired()])
     bio = StringField('Bio')

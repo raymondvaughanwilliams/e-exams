@@ -28,10 +28,8 @@ def register():
         db.session.add(user)
         db.session.commit()
         flash('Thanks for registering!')
-        if form.role.data == 'user':
-            return redirect(url_for('users.login'))
-        else:
-            return redirect(url_for('users.vendorregister',id=user.id))
+        return redirect(url_for('users.login'))
+
             
 
     return render_template('register.html',form=form)
@@ -77,7 +75,7 @@ def vendorregister(id):
 
 @users.route('/', methods=['GET', 'POST'])
 def login():
-
+    print('in login route')
     form = LoginForm()
     if form.validate_on_submit():
         # Grab the user from our User Models table
@@ -123,25 +121,14 @@ def login():
             flash('Logged in successfully.')
             if userr.role == "student":
                 print("logging student in")
-
                 return redirect(url_for('exam.exams'))
             elif userr.role == "invigilator":
                 print("logging invigilator in")
-
+                return redirect(url_for('exam.iexams'))
+            elif userr.role == "examiner":
+                print("logging examiner in")
                 return redirect(url_for('exam.iexams'))
 
-
-
-
-            # If a user was trying to visit a page that requires a login
-            # # flask saves that URL as 'next'.
-            # next = request.args.get('next')
-
-            # # So let's now check if that next exists, otherwise we'll go to
-            # # the welcome page.
-            # if next == None or not next[0]=='/':
-            #     next = url_for('exam.exams')
-            
 
             return redirect(next)
         else:
