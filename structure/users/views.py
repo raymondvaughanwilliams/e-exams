@@ -138,7 +138,7 @@ def login():
             # So let's now check if that next exists, otherwise we'll go to
             # the welcome page.
             if next == None or not next[0]=='/':
-                next = url_for('exam.exams')
+                next = url_for('users.login')
             
 
             return redirect(next)
